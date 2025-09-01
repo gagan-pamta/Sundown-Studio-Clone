@@ -15,7 +15,7 @@ html,body{
 }
 
 .page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color:#EFEAE3;
     position: relative;
@@ -96,5 +96,11 @@ nav{
     font-size: 180px;
     text-align: right;
     line-height: 8vw;
+}
+
+.page1 video{
+    width: 100%;
+    border-radius: 2vw;
+    margin-top: 8vh;
 }
 
