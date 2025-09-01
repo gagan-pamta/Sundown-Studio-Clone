@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Seo;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,10 +19,11 @@ html,body{
     width: 100%;
     background-color:#EFEAE3;
     position: relative;
+    padding: 0 2vw 02vw;
 }
 
 nav{
-   padding: 4vh 2vw;
+   padding: 4vh 2vw 5vw 2vw;
    width: 100%;
    display: flex;
    align-items: center;
@@ -68,3 +74,27 @@ nav{
 .nav-part2 h4:hover a{
     color: white;
 }
+.center{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 1px solid #b5b4b4;
+    font-family: Seo;
+}
+.left{
+    padding-bottom: 8.5vh;
+    padding-left: 3.5vh;
+    width: 35vw;
+    font-size: 40px;
+}
+
+.right{
+    padding-bottom: 6vh;
+    padding-right: 6vh;
+    font-size: 180px;
+    text-align: right;
+    line-height: 8vw;
+}
+
