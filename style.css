@@ -23,7 +23,7 @@ html,body{
 }
 
 nav{
-   padding: 4vh 2vw 5vw 2vw;
+   padding: 5vh 0vw 5vw 0vw;
    width: 100%;
    display: flex;
    align-items: center;
@@ -33,13 +33,13 @@ nav{
 .nav-part2{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-part2 h4{
     border: 1px solid rgba(131, 129, 129, 0.964);
-    border-radius: 45px;
-    padding: 15px 20px;
+    border-radius: 60px;
+    padding: 12px 17px;
     font-weight: 600 ;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -56,7 +56,7 @@ nav{
     width: 100%;
     left: 0;
     bottom: -100%;
-    border-radius: 30%;
+    border-radius: 20%;
     transition: all ease 0.4s;
 }
 
@@ -74,6 +74,7 @@ nav{
 .nav-part2 h4:hover a{
     color: white;
 }
+
 .center{
     height: 70vh;
     width: 100%;
@@ -83,24 +84,65 @@ nav{
     border-bottom: 1px solid #b5b4b4;
     font-family: Seo;
 }
+
 .left{
     padding-bottom: 8.5vh;
-    padding-left: 3.5vh;
+    padding-left: 3vh;
     width: 35vw;
     font-size: 40px;
 }
 
 .right{
     padding-bottom: 6vh;
-    padding-right: 6vh;
     font-size: 180px;
     text-align: right;
     line-height: 8vw;
 }
 
 .page1 video{
+    position: relative;
     width: 100%;
     border-radius: 2vw;
     margin-top: 8vh;
 }
 
+.orng-shape{
+    position: absolute;
+    right: 0;
+    top: 84vh;
+    width: 105vh;
+    height: 90vh;
+}
+
+.orng-1{
+    background-color: #FE340C;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+.orng-2{
+    background-color: #FE340C;
+    border-radius: 50%;
+    height: 80vh;
+    width: 80vh;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}
+
+@keyframes anime1{
+    from{
+        transform: translate(-8%,8%);
+    }
+    to{
+        transform: translate(8%,-8%);
+    }
+}
