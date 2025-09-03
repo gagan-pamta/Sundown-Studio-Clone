@@ -2,6 +2,16 @@
     font-family: Seo;
     src: url(Assets/NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(Assets/NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: cool;
+    font-weight: 200;
+    src: url(Assets/NeueHaasDisplayRoman.ttf);
+}
 
 *{
     margin: 0;
@@ -154,6 +164,7 @@ nav{
     width: 100%;
     background-color:#EFEAE3 ;
     padding: 5.5vw 0;
+    position: relative;
 }
 
 .moving-txt{
@@ -166,7 +177,6 @@ nav{
 }
 
 .con{
-    white-space: nowrap;
     display: inline-block;
     animation-name: move;
     animation-duration: 10s;
@@ -195,5 +205,65 @@ nav{
     }
     to{
         transform: translateX(-100%);
+    }
+}
+
+.page-2bottom{
+    height: 80vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+}
+
+.page-2bottom h1{
+    font-family: Seo;
+    font-size: 50px;
+    width: 48%;
+    line-height: 8vh;
+    position: relative;
+    z-index: 9;
+}
+
+.bottom-part2 img{
+    height: 30vh;
+    width: auto;
+    border-radius: 3vh;
+}
+
+ .bottom-part2{
+    width: 25%;
+}
+
+.bottom-part2 p{
+    margin-top: 5vh;
+    font-weight: 200;
+    font-family: cool;
+}
+
+.gola{
+    height: 70vh;
+    width: 70vh;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+    top: 55%;
+    left: 20%;
+    filter: blur(20px);
+    animation-name: ring;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ring{
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-12deg);
     }
 }
