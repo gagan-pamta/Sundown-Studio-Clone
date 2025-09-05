@@ -22,7 +22,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .page1{
@@ -266,4 +266,97 @@ nav{
     to{
         transform: translate(-10%,10%) skew(-12deg);
     }
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#EFEAE3;
+}
+
+.feat{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5vh;
+}
+
+.feat-1{
+    height: 1vh;
+    width: 1vh;
+    border-radius: 50%;
+    background-color: #FE340C;
+    display: inline-block;
+}
+
+.feat p{
+    font-weight: 200;
+    font-family: cool ;
+    display: inline-block;
+    padding-left: 1vh;
+}
+
+.element{
+    margin-top: 10vh;
+}
+
+.elem{
+    height: 130px;
+    width: 100%;
+    border-bottom: 2px solid #b5b4b4;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 4vh 0 4vh;
+}
+
+.elem h1{
+    font-size: 3vw;
+    font-family: Seo;
+    z-index: 9;
+}
+
+.brand{
+    z-index: 9;
+}
+
+#fang{
+    text-align: right;
+    font-weight: 200;
+    font-family: cool;
+}
+
+
+#env{
+    font-family: cool;
+    color: #b5b4b4;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+.fixed-img{
+    height: 30vw;
+    width: 24vw;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 20%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }

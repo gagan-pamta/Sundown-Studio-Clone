@@ -6,3 +6,24 @@ const scroll = new LocomotiveScroll({
 window.addEventListener("load", () => {
   scroll.update();
 });
+
+let elemCont = document.querySelector(".element");
+let fxdImg = document.querySelector(".fixed-img");
+elemCont.addEventListener("mouseenter",function(){
+    fxdImg.style.display = "block"
+})
+elemCont.addEventListener("mouseleave",function(){
+    fxdImg.style.display = "none"
+})
+
+let elemS = document.querySelectorAll(".elem")
+elemS.forEach((e)=>{
+    e.addEventListener("mouseenter", ()=>{
+        let img = e.getAttribute("data-img")
+        fxdImg.style.backgroundImage = `url(${img})`
+        
+    })
+})
+
+
+
