@@ -2,56 +2,65 @@
     font-family: Seo;
     src: url(Assets/NeueHaasDisplayMediu.ttf);
 }
+
 @font-face {
     font-family: neu;
     font-weight: 100;
     src: url(Assets/NeueHaasDisplayLight.ttf);
 }
+
 @font-face {
     font-family: cool;
     font-weight: 200;
     src: url(Assets/NeueHaasDisplayRoman.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     /* overflow: hidden; */
 }
 
-.page1{
+.main{
+    position: relative;
+    /* background-color: black; */
+    z-index: 10;
+}
+
+.page1 {
     min-height: 100vh;
     width: 100%;
-    background-color:#EFEAE3;
+    background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw 02vw;
 }
 
-nav{
-   padding: 5vh 0vw 5vw 0vw;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+nav {
+    padding: 5vh 0vw 5vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-part2{
+.nav-part2 {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.nav-part2 h4{
+.nav-part2 h4 {
     border: 1px solid rgba(131, 129, 129, 0.964);
     border-radius: 60px;
     padding: 12px 17px;
-    font-weight: 600 ;
+    font-weight: 600;
     font-size: 18px;
     color: rgb(0, 0, 0);
     position: relative;
@@ -59,7 +68,7 @@ nav{
     overflow: hidden;
 }
 
-.nav-part2 h4::after{
+.nav-part2 h4::after {
     content: "";
     position: absolute;
     background-color: black;
@@ -71,11 +80,11 @@ nav{
     transition: all ease 0.4s;
 }
 
-.nav-part2 h4:hover::after{
+.nav-part2 h4:hover::after {
     bottom: 0;
 }
 
-.nav-part2 h4 a{
+.nav-part2 h4 a {
     text-decoration: none;
     color: black;
     position: relative;
@@ -83,11 +92,11 @@ nav{
     font-family: Seo;
 }
 
-.nav-part2 h4:hover a{
+.nav-part2 h4:hover a {
     color: white;
 }
 
-.center{
+.center {
     height: 70vh;
     width: 100%;
     display: flex;
@@ -97,28 +106,28 @@ nav{
     font-family: Seo;
 }
 
-.left{
+.left {
     padding-bottom: 8.5vh;
     padding-left: 3vh;
     width: 35vw;
     font-size: 40px;
 }
 
-.right{
+.right {
     padding-bottom: 6vh;
     font-size: 180px;
     text-align: right;
     line-height: 8vw;
 }
 
-.page1 video{
+.page1 video {
     position: relative;
     width: 100%;
     border-radius: 2vw;
     margin-top: 8vh;
 }
 
-.orng-shape{
+.orng-shape {
     position: absolute;
     right: 0;
     top: 84vh;
@@ -126,7 +135,7 @@ nav{
     height: 90vh;
 }
 
-.orng-1{
+.orng-1 {
     background-color: #FE340C;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -136,7 +145,7 @@ nav{
     position: absolute;
 }
 
-.orng-2{
+.orng-2 {
     background-color: #FE340C;
     border-radius: 50%;
     height: 80vh;
@@ -147,36 +156,37 @@ nav{
     animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate ;
+    animation-direction: alternate;
 }
 
-@keyframes anime1{
-    from{
-        transform: translate(-8%,8%);
+@keyframes anime1 {
+    from {
+        transform: translate(-8%, 8%);
     }
-    to{
-        transform: translate(8%,-8%);
+
+    to {
+        transform: translate(8%, -8%);
     }
 }
 
-.page2{
+.page2 {
     min-height: 100vh;
     width: 100%;
-    background-color:#EFEAE3 ;
+    background-color: #EFEAE3;
     padding: 5.5vw 0;
     position: relative;
 }
 
-.moving-txt{
+.moving-txt {
     overflow-x: auto;
     white-space: nowrap;
 }
 
-.moving-txt::-webkit-scrollbar{
+.moving-txt::-webkit-scrollbar {
     display: none;
 }
 
-.con{
+.con {
     display: inline-block;
     animation-name: move;
     animation-duration: 10s;
@@ -184,31 +194,32 @@ nav{
     animation-iteration-count: infinite;
 }
 
-.moving-txt h1{
+.moving-txt h1 {
     font-size: 15.5vh;
     font-family: Seo;
     display: inline-block;
 }
 
-.circle{
+.circle {
     height: 8.5vh;
     width: 8.5vh;
     border-radius: 50%;
-    background-color:#FE340C;
+    background-color: #FE340C;
     display: inline-block;
     margin: 0 2vw;
 }
 
-@keyframes move{
-    from{
+@keyframes move {
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-.page-2bottom{
+.page-2bottom {
     height: 80vh;
     width: 100%;
     background-color: #EFEAE3;
@@ -218,7 +229,7 @@ nav{
     padding: 3vw 5vw;
 }
 
-.page-2bottom h1{
+.page-2bottom h1 {
     font-family: Seo;
     font-size: 50px;
     width: 48%;
@@ -227,23 +238,23 @@ nav{
     z-index: 9;
 }
 
-.bottom-part2 img{
+.bottom-part2 img {
     height: 30vh;
     width: auto;
     border-radius: 3vh;
 }
 
- .bottom-part2{
+.bottom-part2 {
     width: 25%;
 }
 
-.bottom-part2 p{
+.bottom-part2 p {
     margin-top: 5vh;
     font-weight: 200;
     font-family: cool;
 }
 
-.gola{
+.gola {
     height: 70vh;
     width: 70vh;
     border-radius: 50%;
@@ -259,29 +270,30 @@ nav{
     animation-direction: alternate;
 }
 
-@keyframes ring{
-    from{
-        transform: translate(10%,-10%) skew(0);
+@keyframes ring {
+    from {
+        transform: translate(10%, -10%) skew(0);
     }
-    to{
-        transform: translate(-10%,10%) skew(-12deg);
+
+    to {
+        transform: translate(-10%, 10%) skew(-12deg);
     }
 }
 
-.page3{
+.page3 {
     min-height: 100vh;
     width: 100%;
-    background-color:#EFEAE3;
+    background-color: #EFEAE3;
 }
 
-.feat{
+.feat {
     display: flex;
     align-items: center;
     position: relative;
     left: 5vh;
 }
 
-.feat-1{
+.feat-1 {
     height: 1vh;
     width: 1vh;
     border-radius: 50%;
@@ -289,18 +301,18 @@ nav{
     display: inline-block;
 }
 
-.feat p{
+.feat p {
     font-weight: 200;
-    font-family: cool ;
+    font-family: cool;
     display: inline-block;
     padding-left: 1vh;
 }
 
-.element{
+.element {
     margin-top: 10vh;
 }
 
-.elem{
+.elem {
     height: 130px;
     width: 100%;
     border-bottom: 2px solid #b5b4b4;
@@ -312,29 +324,28 @@ nav{
     padding: 0 4vh 0 4vh;
 }
 
-.elem h1{
+.elem h1 {
     font-size: 3vw;
     font-family: Seo;
     z-index: 9;
 }
 
-.brand{
+.brand {
     z-index: 9;
 }
 
-#fang{
+#fang {
     text-align: right;
     font-weight: 200;
     font-family: cool;
 }
 
-
-#env{
+#env {
     font-family: cool;
     color: #b5b4b4;
 }
 
-.overlay{
+.overlay {
     height: 100%;
     width: 100%;
     background-color: #FF9831;
@@ -344,11 +355,11 @@ nav{
     transition: all ease 0.3s;
 }
 
-.elem:hover .overlay{
+.elem:hover .overlay {
     top: 0;
 }
 
-.fixed-img{
+.fixed-img {
     height: 30vw;
     width: 24vw;
     border-radius: 15px;
@@ -360,3 +371,149 @@ nav{
     background-size: cover;
     background-position: center;
 }
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+.page5{
+    height: 105vh;   
+    width: 100%;
+}
+
+.footer{
+    height: 105vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    color: white;
+    bottom: 0;
+}
+
+.parent{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.shape1{
+    height: 85%;
+    width: 85%;
+    background-color: #FE340C;
+    position: absolute;
+    filter: blur(50px);
+    top: -50%;
+    left: -20%;
+    animation-name: shape1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.shape2{
+    height:70%;
+    width: 90%;
+    background-color: #FE340C;
+    position: absolute;
+    filter: blur(50px);
+    top: -27%;
+    right: -27%;
+    animation-name: shape2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shape1 {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes shape2{
+    0%{
+        transform: rotate(35deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+.footer-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 12vh;
+    position: absolute;
+    bottom: 70%;
+}
+
+.footer-top1 h3{
+    width: 5vh;
+    font-size: 30px;
+    font-family: Seo;
+    color: #EFEAE3;
+}
+
+.footer-top2 h6{
+    width: 50vh;
+    font-family: cool;
+    font-size: 20px;
+    margin-bottom: 4vh;
+    font-weight: 100;
+    color: #EFEAE3;
+}
+
+.footer-top2 h4{
+    width: 50vh;
+    font-family: cool;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(176, 173, 173);
+    color: rgb(176, 173, 173);
+    padding-bottom: 1vh;
+    font-weight: 100;
+}
+
+.footer h1{
+    font-size: 50vh;
+    color: #EFEAE3;
+    font-family: Seo;
+    position: absolute;
+    bottom: 3%;
+}
+
+.footer-bottom{
+    border-top: 2px solid rgba(155, 146, 146, 0.299);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    column-gap: 49vh;
+    margin: 0 2vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-bottom h5{
+    font-family: cool;
+    font-size: 16px;
+    font-weight: 300;
+    color: #EFEAE3;
+}
+
+
+
+
+
