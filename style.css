@@ -25,12 +25,14 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
+    background-color: #EFEAE3;
+
+
 }
 
 .main{
     position: relative;
-    /* background-color: black; */
     z-index: 10;
 }
 
@@ -40,6 +42,8 @@ body {
     background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw 02vw;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -378,6 +382,96 @@ nav {
     background-color: #EFEAE3;
 }
 
+.all-project{
+    width: 9%;
+    border: 1px solid rgba(131, 129, 129, 0.964);
+    border-radius: 50px;
+    padding: 12px 19px;
+    margin: 8vh 0 0 5vh;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+.all-project::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    border-radius: 15%;
+    transition: all ease 0.4s;
+}
+
+.all-project:hover::after{
+    bottom: 0;
+}
+
+.all-project a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+    font-family: Seo;
+}
+
+.all-project:hover a{
+    color: #EFEAE3;
+}
+
+.hero-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20vh 5vh 0 5vh ;
+    border-radius: 5vh;
+}
+
+.hero img{
+    height: 105vh;
+    width: 110vh;
+    border-radius: 3vh;
+    background-color: black;
+}
+
+.hero1{
+    margin-left: 20vh
+}
+
+.head{
+    color:#EFEAE3;
+    font-size: 60px;
+    font-family: Seo;
+    border-left: 2px solid #504A45;
+}
+
+.head h4{
+    margin-left: 4vh;
+    color: #504A45;
+}
+
+.hero p{
+    color: #EFEAE3;
+    font-family: cool;
+    width: 60vh;
+    margin-top: 1vh;
+}
+
 .page5{
     height: 105vh;   
     width: 100%;
@@ -512,6 +606,8 @@ nav {
     font-weight: 300;
     color: #EFEAE3;
 }
+
+
 
 
 
