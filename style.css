@@ -5,7 +5,6 @@
 
 @font-face {
     font-family: neu;
-    font-weight: 100;
     src: url(Assets/NeueHaasDisplayLight.ttf);
 }
 
@@ -25,9 +24,8 @@ html,
 body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #EFEAE3;
-    margin: 0;
 }
 
 .container {
@@ -102,6 +100,10 @@ nav {
 
 .nav-part2 h4:hover a {
     color: white;
+}
+
+.menu{
+    display: none;
 }
 
 .center {
@@ -673,4 +675,64 @@ nav {
     font-size: 16px;
     font-weight: 300;
     color: #EFEAE3;
+}
+
+.full-scr {
+    height: 100vh;
+    width: 100%;
+    background-color: #00000070;
+    position: fixed;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+
+.full-div1 {
+    height: 50%;
+    width: 100%;
+    background-color: #EFEAE3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 8vh;
+    display: flex;
+    justify-content:end;
+    align-items:end;
+    flex-direction: column;
+    font-family: Seo;
+}
+
+
+@media (max-width : 600px){
+    .page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    padding: 3vh ;
+    position: absolute;
+    z-index: 99;
+}
+
+.nav-part2 {
+    display: none;
+}
+
+.nav img{
+    transition: all ease 0.2s;
+    height: 10vh;
+}
+
+.menu{
+    display: block;
+    height: 7vh;
+    width: 23%;
+    padding: 2vh 2vh 2vh 2vh;
+    border-radius: 5vh;
+    border: 1px solid rgb(206, 204, 204);
+    color: rgb(70, 70, 70);
+    text-align: center;
+    font-family: neu;
+    font-weight: 0;
+}
 }

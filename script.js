@@ -5,6 +5,7 @@ const scroll = new LocomotiveScroll({
 
 window.addEventListener("load", () => {
     scroll.update();
+    menuAnimation();
 });
 
 let elemCont = document.querySelector(".element");
@@ -43,6 +44,25 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 50,
 });
+
+function menuAnimation() {
+    var menu = document.querySelector(".menu")
+    var full = document.querySelector(".full-scr")
+    var navimg = document.querySelector("nav img")
+    var flag = 0
+    menu.addEventListener("click", function () {
+        if (flag == 0) {
+            full.style.top = 0
+            navimg.style.opacity = 0
+            flag = 1
+        } else {
+            full.style.top = "-100%"
+            navimg.style.opacity = 1
+            flag = 0
+        }        
+    })
+}
+
 
 
 
