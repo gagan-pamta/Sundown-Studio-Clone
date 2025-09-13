@@ -735,4 +735,56 @@ nav {
     font-family: neu;
     font-weight: 0;
 }
+
+.center {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 1px solid #b5b4b4;
+    font-family: Seo;
+    position: relative;
+}
+
+.left {
+    padding-bottom: 5vh;
+    padding-left: 1vh;
+    width: 87%;
+    font-size: 40px;
+}
+
+.right {
+    position: absolute;
+    top: 17vh;
+    right: 4vh;
+    font-size: 120px;
+    text-align: right;
+    line-height: 17vw;
+}
+
+.page1 video {
+    position: relative;
+    width: 92%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vw;
+    margin: 4vh 3vh 0 2vh;
+}
+
+.orng-shape {
+    position: absolute;
+    right: 0;
+    top: 65vh;
+    width: 30vh;
+    height: 30vh;
+}
+
+.orng-2 {
+    height: 30vh;
+    width: 30vh;
+}
+
+
 }
